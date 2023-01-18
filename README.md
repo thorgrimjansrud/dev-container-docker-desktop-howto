@@ -5,7 +5,7 @@ Branch for template
 
 ## Steps
 
-### Add devconatiner.json file
+### Add devcontainer.json file
 
 Press 'F1' and select 'Dev Containers: Add Dev Container Configuration Files ...'. <br/>
 Select the prefered template, in this case 'ubuntu:bionic'. <br/>
