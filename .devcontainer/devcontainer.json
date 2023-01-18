@@ -3,7 +3,16 @@
 {
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bionic",
+	//"image": "mcr.microsoft.com/devcontainers/base:bionic",
+
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
+		// Use hirsute or bionic on local arm64/Apple Silicon.
+		"args": {
+			"VARIANT": "bionic"
+		}
+	},
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {}
 	}
