@@ -1,22 +1,16 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
+	//"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	//"image": "mcr.microsoft.com/devcontainers/base:bionic",
 
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
-		// Use hirsute or bionic on local arm64/Apple Silicon.
-		"args": {
-			"VARIANT": "bionic"
-		}
-	},
-	"features": {
-		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {}
-	}
 
+	// LES : https://containers.dev/guide/dockerfile
+	"build": {
+		"dockerfile": "Dockerfile"
+
+		
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
