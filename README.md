@@ -46,6 +46,12 @@ Settings.json:
 
 No 'pull' here ..
 
+FIX:
+Istedet for å bruke "reopen in conainer" kjører vi høyreklikk og "Build image.." på Dockerfile.
+
+Settings.json:
+     "docker.commands.build": "docker build --rm -f \"${dockerfile}\" -t ${tag} \"${context}\"",
+     "docker.commands.run": "${containerCommand} run --rm -d ${exposedPorts} ${tag}",
 
 
 
